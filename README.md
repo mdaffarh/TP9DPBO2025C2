@@ -1,49 +1,28 @@
-# TP8DPBO2025C2
+# TP9DPBO2025C2
 ## Janji
-Saya Muhammad Daffa Rizmawan Harahap mengerjakan TP8 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
+Saya Muhammad Daffa Rizmawan Harahap mengerjakan TP9 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 ## Desain Program
-Program dibuat dalam arsitektur MVC atau Model, View, dan Controller. Terdapat dua kelas utama yaitu:
-- Student
-- Extracurricular
+Program ini dibuat dengan menggunakan arsitektur MVP (Model-View-Presenter), yang memisahkan logika aplikasi menjadi tiga komponen utama:
+Model: Berisi logika data dan representasi dari entitas yang digunakan dalam aplikasi. Dalam program ini, terdapat satu entitas yaitu Mahasiswa yang merepresentasikan data mahasiswa seperti NIM, nama, jurusan, dan data relevan lainnya.
+View: Komponen antarmuka pengguna yang bertanggung jawab menampilkan data dan menerima input dari pengguna. View hanya menangani tampilan dan tidak mengandung logika bisnis.
+Presenter: Bertindak sebagai penghubung antara Model dan View. Presenter mengambil data dari Model, mengolahnya jika diperlukan, dan mengirimkannya ke View untuk ditampilkan. Presenter juga menangani input dari View dan mengatur alur interaksi.
   
 ## Struktur Folder
-![image](https://github.com/user-attachments/assets/4a667d0a-1572-41b4-a391-4e109bc957b3)
+![Screenshot 2025-05-11 000722](https://github.com/user-attachments/assets/727349b7-521b-44de-bf5c-278f172e3506)
 
 ## Alur Program
-### 1. Routing
-File `index.php` berfungsi sebagai router utama. Berdasarkan parameter `$_GET['page']`, sistem akan memilih controller yang sesuai:
-- `page tidak diset` → `StudentController`
-- `page=extracurricular` → `ExtracurricularController`
-
-### 2. Controller (`/controllers`)
-Controller berisi logika aplikasi dan menjembatani antara model dan view. Method umum yang digunakan:
-- `index()` → Menampilkan daftar data
-- `create()` → Menampilkan form tambah
-- `add($data)` → Memproses input tambah data
-- `edit($id)` → Menampilkan form edit
-- `update($data)` → Memproses update data
-- `delete($id)` → Menghapus data
-
-### 3. Model
-Model berisi fungsi untuk mengakses database seperti:
-- `add($data)`
-- `getAll()`
-- `find($id)`
-- `update($data)`
-- `delete($id)`
-
-Model dihubungkan dengan database melalui `DB.class.php`.
-
-### 4. View dan Template
-- Folder `views/` memuat file PHP yang mengatur tampilan (memanggil template).
-- Folder `templates/` menyimpan file HTML statis untuk masing-masing entitas (student dan extracurricular), terdiri dari:
-  - `index.html`
-  - `create.html`
-  - `edit.html`
+1. User membuka halaman.
+2. View meminta data kepada Presenter.
+3. Presenter mengambil data Mahasiswa dari Model.
+4. Presenter mengembalikan data ke View.
+5. View menampilkan data tersebut ke pengguna menggunakan template HTML.
 
 ## Dokumentasi
-https://github.com/user-attachments/assets/d560605f-d5b7-4632-a999-c1fd7197f19a
+
+
+Uploading Arc 2025-05-10 23-33-46.mp4…
+
 
 
   
