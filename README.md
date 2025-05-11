@@ -19,9 +19,7 @@ Presenter: Bertindak sebagai penghubung antara Model dan View. Presenter mengamb
 5. View menampilkan data tersebut ke pengguna menggunakan template HTML.
 
 ## Dokumentasi
-
-
-Uploading Arc 2025-05-10 23-33-46.mp4…
+https://github.com/user-attachments/assets/314bcefd-d085-4c7a-9927-eb6a7d2bb261
 
 
 
