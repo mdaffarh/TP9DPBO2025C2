@@ -4,9 +4,9 @@ Saya Muhammad Daffa Rizmawan Harahap mengerjakan TP9 dalam mata kuliah DPBO untu
 
 ## Desain Program
 Program ini dibuat dengan menggunakan arsitektur MVP (Model-View-Presenter), yang memisahkan logika aplikasi menjadi tiga komponen utama:
-Model: Berisi logika data dan representasi dari entitas yang digunakan dalam aplikasi. Dalam program ini, terdapat satu entitas yaitu Mahasiswa yang merepresentasikan data mahasiswa seperti NIM, nama, jurusan, dan data relevan lainnya.
-View: Komponen antarmuka pengguna yang bertanggung jawab menampilkan data dan menerima input dari pengguna. View hanya menangani tampilan dan tidak mengandung logika bisnis.
-Presenter: Bertindak sebagai penghubung antara Model dan View. Presenter mengambil data dari Model, mengolahnya jika diperlukan, dan mengirimkannya ke View untuk ditampilkan. Presenter juga menangani input dari View dan mengatur alur interaksi.
+- Model: Berisi logika data dan representasi dari entitas yang digunakan dalam aplikasi. Dalam program ini, terdapat satu entitas yaitu Mahasiswa yang merepresentasikan data mahasiswa seperti NIM, nama, jurusan, dan data relevan lainnya.
+- View: Komponen antarmuka pengguna yang bertanggung jawab menampilkan data dan menerima input dari pengguna. View hanya menangani tampilan dan tidak mengandung logika bisnis.
+- Presenter: Bertindak sebagai penghubung antara Model dan View. Presenter mengambil data dari Model, mengolahnya jika diperlukan, dan mengirimkannya ke View untuk ditampilkan. Presenter juga menangani input dari View dan mengatur alur interaksi.
   
 ## Struktur Folder
 ![Screenshot 2025-05-11 000722](https://github.com/user-attachments/assets/727349b7-521b-44de-bf5c-278f172e3506)
